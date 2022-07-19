@@ -41,8 +41,7 @@ public class CustomeController {
 
   @DeleteMapping("/{id}")
   public String deleteCustomerByID(@PathVariable("id") Long id) {
-    customerService.deleteCustomerByID(id);
-    return "Successfully deleted";
+    return customerService.deleteCustomerByID(id);
   }
 
 }

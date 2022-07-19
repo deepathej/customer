@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import com.accenture.appsyncpoc.entity.Customer;
 import com.accenture.appsyncpoc.error.CustomerNotFoundException;
@@ -49,8 +50,15 @@ public class CustomerServiceImpl implements CustomerService {
   }
 
   @Override
-  public void deleteCustomerByID(Long id) {
-    customerRepository.deleteById(id);
+  public String deleteCustomerByID(Long id) {
+    try {
+      customerRepository.deleteById(id);
+      LOGGER.info("Customer deleted");
+    } catch (EmptyResultDataAccessException e) {
+      LOGGER.info("Customer with Id not found");
+      return "No Customer with id: " + id;
+    }
+    return "Customer with id: " + id + " deleted";
   }
 
 }

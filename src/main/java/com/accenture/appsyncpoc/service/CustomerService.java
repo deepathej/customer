@@ -13,7 +13,7 @@ public interface CustomerService {
 
   Customer getCustomerByEmail(String email) throws CustomerNotFoundException;
 
-  void deleteCustomerByID(Long id);
+  String deleteCustomerByID(Long id);
 
 
 }
