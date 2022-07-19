@@ -1,0 +1,11 @@
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (1, 'Siva', 'siva@gmail.com', '8152345654', 'Bangalore', 'Karnataka', 'whitefield', '512345')
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (2, 'Karnakar', 'Karnakar@gmail.com', '8152345653', 'Hyderabad', 'Telangana', 'panjagutta', '512342')
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (3, 'Aditya', 'Aditya@gmail.com', '8152345652', 'Kochi', 'Kerala', 'toraipakkam', '563244')
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (4, 'Abishiek', 'Abishiek@gmail.com', '8152345651', 'Chennai', 'TamilNadu', 'salem', '512888')
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (5, 'Vikram', 'vikram@gmail.com', '8152345659', 'Raipur', 'Chhattisgarh', 'whitefield', '512345')
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (6, 'Ashim', 'ashim@gmail.com', '8152345658', 'Jaipur', 'Rajasthan', 'panjagutta', '512342')
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (7, 'Simha', 'simha@gmail.com', '8152345657', 'Kolkata', 'West Bengal', 'toraipakkam', '563244')
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (8, 'Guna', 'guna@gmail.com', '8152345656', 'Amaravati', 'Andhra Pradesh', 'salem', '512888')
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (9, 'Rajesh', 'rajesh@gmail.com', '8152345655', 'Patna', 'Bihar', 'whitefield', '512345')
+INSERT INTO customer (id, name, email, mobno, city, state, addressline, pincode) VALUES (10, 'Anil', 'anil@gmail.com', '8152345650', 'Mumbai', 'Maharastra', 'panjagutta', '512342')
+UPDATE HIBERNATE_SEQUENCES SET NEXT_VAL=10 WHERE SEQUENCE_NAME='default'
